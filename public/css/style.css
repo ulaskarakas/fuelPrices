@@ -5,6 +5,12 @@ form{
     border-radius: 10px;
 }
 
+img{
+    height: auto;
+    max-width: 30px;
+    border-radius: 2px;
+}
+
 #table{
     padding: 15px;
     background-color: #90A4AE;
