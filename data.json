@@ -1,6 +1,7 @@
 [
     {
         "city": "Adana",
+	    "plate": "1",
         "districts": [
             "Aladağ",
             "Ceyhan",
@@ -21,6 +22,7 @@
     },
     {
         "city": "Adıyaman",
+	    "plate": "2",
         "districts": [
             "Merkez",
             "Besni",
@@ -35,6 +37,7 @@
     },
     {
         "city": "Afyonkarahisar",
+	    "plate": "3",
         "districts": [
             "Merkez",
             "Başmakçı",
@@ -58,6 +61,7 @@
     },
     {
         "city": "Ağrı",
+	    "plate": "4",
         "districts": [
             "Merkez",
             "Diyadin",
@@ -70,6 +74,7 @@
     },
     {
         "city": "Aksaray",
+	    "plate": "68",
         "districts": [
             "Merkez",
             "Ağaçören",
@@ -83,6 +88,7 @@
     },
     {
         "city": "Amasya",
+	    "plate": "5",
         "districts": [
             "Merkez",
             "Göynücek",
@@ -95,6 +101,7 @@
     },
     {
         "city": "Ankara",
+	    "plate": "6",
         "districts": [
             "Akyurt",
             "Altındağ",
@@ -125,6 +132,7 @@
     },
     {
         "city": "Antalya",
+	    "plate": "7",
         "districts": [
             "Akseki",
             "Aksu",
@@ -149,6 +157,7 @@
     },
     {
         "city": "Ardahan",
+	    "plate": "75",
         "districts": [
             "Merkez",
             "Çıldır",
@@ -160,6 +169,7 @@
     },
     {
         "city": "Artvin",
+	    "plate": "8",
         "districts": [
             "Merkez",
             "Ardanuç",
@@ -174,6 +184,7 @@
     },
     {
         "city": "Aydın",
+	    "plate": "9",
         "districts": [
             "Bozdoğan",
             "Buharkent",
@@ -196,6 +207,7 @@
     },
     {
         "city": "Balikesir",
+	    "plate": "10",
         "districts": [
             "Altıeylül",
             "Ayvalık",
@@ -221,6 +233,7 @@
     },
     {
         "city": "Bartın",
+	    "plate": "74",
         "districts": [
             "Merkez",
             "Amasra",
@@ -230,6 +243,7 @@
     },
     {
         "city": "Batman",
+	    "plate": "72",
         "districts": [
             "Merkez",
             "Beşiri",
@@ -241,6 +255,7 @@
     },
     {
         "city": "Bayburt",
+	    "plate": "69",
         "districts": [
             "Merkez",
             "Aydıntepe",
@@ -249,6 +264,7 @@
     },
     {
         "city": "Bilecik",
+	    "plate": "11",
         "districts": [
             "Merkez",
             "Bozüyük",
@@ -262,6 +278,7 @@
     },
     {
         "city": "Bingöl",
+	    "plate": "12",
         "districts": [
             "Merkez",
             "Adaklı",
@@ -275,6 +292,7 @@
     },
     {
         "city": "Bitlis",
+	    "plate": "13",
         "districts": [
             "Merkez",
             "Adilcevaz",
@@ -287,6 +305,7 @@
     },
     {
         "city": "Bolu",
+	    "plate": "14",
         "districts": [
             "Merkez",
             "Dörtdivan",
@@ -301,6 +320,7 @@
     },
     {
         "city": "Burdur",
+	    "plate": "15",
         "districts": [
             "Merkez",
             "Ağlasun",
@@ -317,6 +337,7 @@
     },
     {
         "city": "Bursa",
+	    "plate": "16",
         "districts": [
             "Büyükorhan",
             "Gemlik",
@@ -339,6 +360,7 @@
     },
     {
         "city": "Çanakkale",
+	    "plate": "17",
         "districts": [
             "Merkez",
             "Ayvacık",
@@ -356,6 +378,7 @@
     },
     {
         "city": "Çankırı",
+	    "plate": "18",
         "districts": [
             "Merkez",
             "Atkaracalar",
@@ -373,6 +396,7 @@
     },
     {
         "city": "Çorum",
+	    "plate": "19",
         "districts": [
             "Merkez",
             "Alaca",
@@ -392,6 +416,7 @@
     },
     {
         "city": "Denizli",
+	    "plate": "20",
         "districts": [
             "Acıpayam",
             "Babadağ",
@@ -412,6 +437,7 @@
     },
     {
         "city": "Diyarbakır",
+	    "plate": "21",
         "districts": [
             "Bağlar",
             "Bismil",
@@ -434,6 +460,7 @@
     },
     {
         "city": "Düzce",
+	    "plate": "81",
         "districts": [
             "Merkez",
             "Akçakoca",
@@ -447,7 +474,8 @@
     },
     {
         "city": "Edirne",
-        "districts": [
+        "plate": "22",
+	    "districts": [
             "Merkez",
             "Enez",
             "Havsa",
@@ -461,6 +489,7 @@
     },
     {
         "city": "Elazığ",
+	    "plate": "23",
         "districts": [
             "Merkez",
             "Ağın",
@@ -477,6 +506,7 @@
     },
     {
         "city": "Erzincan",
+	    "plate": "24",
         "districts": [
             "Merkez",
             "Çayırlı",
@@ -491,6 +521,7 @@
     },
     {
         "city": "Erzurum",
+	    "plate": "25",
         "districts": [
             "Aşkale",
             "Aziziye",
@@ -516,6 +547,7 @@
     },
     {
         "city": "Eskişehir",
+	    "plate": "26",
         "districts": [
             "Alpu",
             "Beylikova",
@@ -535,6 +567,7 @@
     },
     {
         "city": "Gaziantep",
+	    "plate": "27",
         "districts": [
             "Araban",
             "İslahiye",
@@ -549,6 +582,7 @@
     },
     {
         "city": "Giresun",
+	    "plate": "28",
         "districts": [
             "Merkez",
             "Alucra",
@@ -570,6 +604,7 @@
     },
     {
         "city": "Gümüşhane",
+	    "plate": "29",
         "districts": [
             "Merkez",
             "Kelkit",
@@ -581,6 +616,7 @@
     },
     {
         "city": "Hakkari",
+	    "plate": "30",
         "districts": [
             "Merkez",
             "Çukurca",
@@ -591,6 +627,7 @@
     },
     {
         "city": "Hatay",
+	    "plate": "31",
         "districts": [
             "Altınözü",
             "Antakya",
@@ -611,6 +648,7 @@
     },
     {
         "city": "Iğdır",
+	    "plate": "76",
         "districts": [
             "Merkez",
             "Aralık",
@@ -620,6 +658,7 @@
     },
     {
         "city": "Isparta",
+	    "plate": "32",
         "districts": [
             "Merkez",
             "Aksu",
@@ -638,6 +677,7 @@
     },
     {
         "city": "İstanbul",
+	    "plate": "34",
         "districts": [
             "Adalar",
             "Arnavutköy",
@@ -682,6 +722,7 @@
     },
     {
         "city": "İzmir",
+	    "plate": "35",
         "districts": [
             "Aliağa",
             "Balçova",
@@ -717,6 +758,7 @@
     },
     {
         "city": "Kahramanmaraş",
+	    "plate": "46",
         "districts": [
             "Afşin",
             "Andırın",
@@ -733,6 +775,7 @@
     },
     {
         "city": "Karabük",
+	    "plate": "78",
         "districts": [
             "Merkez",
             "Eflani",
@@ -744,6 +787,7 @@
     },
     {
         "city": "Karaman",
+	    "plate": "70",
         "districts": [
             "Merkez",
             "Ayrancı",
@@ -755,6 +799,7 @@
     },
     {
         "city": "Kars",
+	    "plate": "36",
         "districts": [
             "Merkez",
             "Akyaka",
@@ -768,6 +813,7 @@
     },
     {
         "city": "Kastamonu",
+	    "plate": "37",
         "districts": [
             "Merkez",
             "Abana",
@@ -793,6 +839,7 @@
     },
     {
         "city": "Kayseri",
+	    "plate": "38",
         "districts": [
             "Akkışla",
             "Bünyan",
@@ -814,6 +861,7 @@
     },
     {
         "city": "Kırıkkale",
+	    "plate": "71",
         "districts": [
             "Merkez",
             "Bahşılı",
@@ -828,6 +876,7 @@
     },
     {
         "city": "Kırklareli",
+	    "plate": "39",
         "districts": [
             "Merkez",
             "Babaeski",
@@ -841,6 +890,7 @@
     },
     {
         "city": "Kırşehir",
+	    "plate": "40",
         "districts": [
             "Merkez",
             "Akçakent",
@@ -853,6 +903,7 @@
     },
     {
         "city": "Kilis",
+	    "plate": "79",
         "districts": [
             "Merkez",
             "Elbeyli",
@@ -862,6 +913,7 @@
     },
     {
         "city": "Kocaeli",
+	    "plate": "41",
         "districts": [
             "Başiskele",
             "Çayırova",
@@ -879,6 +931,7 @@
     },
     {
         "city": "Konya",
+	    "plate": "42",
         "districts": [
             "Ahırlı",
             "Akören",
@@ -915,6 +968,7 @@
     },
     {
         "city": "Kütahya",
+	    "plate": "43",
         "districts": [
             "Merkez",
             "Altıntaş",
@@ -933,6 +987,7 @@
     },
     {
         "city": "Malatya",
+	    "plate": "44",
         "districts": [
             "Akçadağ",
             "Arapgir",
@@ -951,6 +1006,7 @@
     },
     {
         "city": "Manisa",
+	    "plate": "45",
         "districts": [
             "Ahmetli",
             "Akhisar",
@@ -973,6 +1029,7 @@
     },
     {
         "city": "Mardin",
+	    "plate": "47",
         "districts": [
             "Artuklu",
             "Dargeçit",
@@ -988,6 +1045,7 @@
     },
     {
         "city": "Mersin",
+	    "plate": "33",
         "districts": [
             "Akdeniz",
             "Anamur",
@@ -1006,6 +1064,7 @@
     },
     {
         "city": "Muğla",
+	    "plate": "48",
         "districts": [
             "Bodrum",
             "Dalaman",
@@ -1024,6 +1083,7 @@
     },
     {
         "city": "Muş",
+	    "plate": "49",
         "districts": [
             "Merkez",
             "Bulanık",
@@ -1035,6 +1095,7 @@
     },
     {
         "city": "Nevşehir",
+	    "plate": "50",
         "districts": [
             "Merkez",
             "Acıgöl",
@@ -1048,6 +1109,7 @@
     },
     {
         "city": "Niğde",
+	    "plate": "51",
         "districts": [
             "Merkez",
             "Altunhisar",
@@ -1059,6 +1121,7 @@
     },
     {
         "city": "Ordu",
+	    "plate": "52",
         "districts": [
             "Akkuş",
             "Altınordu",
@@ -1083,6 +1146,7 @@
     },
     {
         "city": "Osmaniye",
+	    "plate": "80",
         "districts": [
             "Merkez",
             "Bahçe",
@@ -1095,6 +1159,7 @@
     },
     {
         "city": "Rize",
+	    "plate": "53",
         "districts": [
             "Ardeşen",
             "Çamlıhemşin",
@@ -1111,6 +1176,7 @@
     },
     {
         "city": "Sakarya",
+	    "plate": "54",
         "districts": [
             "Adapazarı",
             "Akyazı",
@@ -1132,6 +1198,7 @@
     },
     {
         "city": "Samsun",
+	    "plate": "55",
         "districts": [
             "19 Mayıs",
             "Alaçam",
@@ -1154,6 +1221,7 @@
     },
     {
         "city": "Siirt",
+	    "plate": "56",
         "districts": [
             "Merkez",
             "Baykan",
@@ -1166,6 +1234,7 @@
     },
     {
         "city": "Sinop",
+	    "plate": "57",
         "districts": [
             "Merkez",
             "Ayancık",
@@ -1180,6 +1249,7 @@
     },
     {
         "city": "Sivas",
+	    "plate": "58",
         "districts": [
             "Merkez",
             "Akıncılar",
@@ -1202,6 +1272,7 @@
     },
     {
         "city": "Şanlıurfa",
+	    "plate": "63",
         "districts": [
             "Akçakale",
             "Birecik",
@@ -1220,6 +1291,7 @@
     },
     {
         "city": "Şırnak",
+	    "plate": "73",
         "districts": [
             "Merkez",
             "Beytüşşebap",
@@ -1232,6 +1304,7 @@
     },
     {
         "city": "Tekirdağ",
+	    "plate": "59",
         "districts": [
             "Çerkezköy",
             "Çorlu",
@@ -1248,6 +1321,7 @@
     },
     {
         "city": "Tokat",
+	    "plate": "60",
         "districts": [
             "Merkez",
             "Almus",
@@ -1265,6 +1339,7 @@
     },
     {
         "city": "Trabzon",
+	    "plate": "61",
         "districts": [
             "Akçaabat",
             "Araklı",
@@ -1288,6 +1363,7 @@
     },
     {
         "city": "Tunceli",
+	    "plate": "62",
         "districts": [
             "Merkez",
             "Çemişgezek",
@@ -1301,6 +1377,7 @@
     },
     {
         "city": "Uşak",
+	    "plate": "64",
         "districts": [
             "Merkez",
             "Banaz",
@@ -1312,6 +1389,7 @@
     },
     {
         "city": "Van",
+	    "plate": "65",
         "districts": [
             "Bahçesaray",
             "Başkale",
@@ -1330,6 +1408,7 @@
     },
     {
         "city": "Yalova",
+	    "plate": "77",
         "districts": [
             "Merkez",
             "Altınova",
@@ -1341,6 +1420,7 @@
     },
     {
         "city": "Yozgat",
+	    "plate": "66",
         "districts": [
             "Merkez",
             "Akdağmadeni",
@@ -1360,6 +1440,7 @@
     },
     {
         "city": "Zonguldak",
+	    "plate": "67",
         "districts": [
             "Merkez",
             "Alaplı",
