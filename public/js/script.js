@@ -1,17 +1,19 @@
 function search() {
+  const brandSelect = document.getElementById("brandSelect");
   const citySelect = document.getElementById("citySelect");
   const districtSelect = document.getElementById("districtSelect");
+  const selectedBrand = brandSelect.value;
   const selectedCity = citySelect.value;
-  const selectedDistrict = districtSelect.value;
+  //const selectedDistrict = districtSelect.value;
 
-  if (selectedCity) {
+  if (selectedCity && brandSelect) {
     console.log("test");
     fetch("/api/gasPrice", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ city: selectedCity, district: selectedDistrict }),
+      body: JSON.stringify({ city: selectedCity, /*district: selectedDistrict,*/ brand: selectedBrand}),
     })
       .then((response) => {
         // Yanıt başarılı mı kontrol edin
@@ -27,7 +29,7 @@ function search() {
         console.error("Veri gönderme hatası:", error);
       });
   } else {
-    //alert("Lütfen bir şehir seçin");
+    alert("Lütfen bir şehir seçin");
   }
 }
 
@@ -44,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         option.textContent = item.city;
         citySelect.appendChild(option);
       });
-
+      /*
       citySelect.addEventListener("change", function () {
         districtSelect.innerHTML = '<option value="">İlçe seçin</option>';
 
@@ -60,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
             districtSelect.appendChild(option);
           });
         }
-      });
+      });*/
     })
     .catch((error) => console.error("Veri çekme hatası:", error));
 });

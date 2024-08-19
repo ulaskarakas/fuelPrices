@@ -32,15 +32,27 @@
                 <form>
                     <div class="form-row center" >
                         <div class="form-group form-margin form-width">
+                            <select id="brandSelect" class="form-control">
+                                <option selected>Firma seçin</option>
+                                <option value="Petrol Ofisi">Petrol Ofisi</option>
+                                <option value="Opet">Opet</option>
+                                <option value="Alpet">Alpet</option>
+                                <option value="Sunpet">Sunpet</option>
+                                <option value="Türkiye Petrolleri">Türkiye Petrolleri</option>
+                            </select>
+                        </div>
+                        <div class="form-group form-margin form-width">
                             <select id="citySelect" class="form-control">
                                 <option selected>Şehir seçin</option>
                             </select>
                         </div>
+                        <!--
                         <div class="form-group form-margin form-width">
                             <select id="districtSelect" class="form-control">
                                 <option selected>İlçe seçin</option>
                             </select>
                         </div>
+                        -->
                         <div class="form-group form-margin">
                             <button id="searchButton" class="btn btn-dark" onclick="search()" type="button">Ara</button>
                         </div>
@@ -51,7 +63,7 @@
                     <table class="table" style="margin: 0;">
                         <thead>
                           <tr>
-                            <th scope="col">Firma</th>
+                            <th scope="col">İlçe</th>
                             <th scope="col">Kurşunsuz Benzin</th>
                             <th scope="col">Motorin</th>
                             <th scope="col">LPG</th>
@@ -59,31 +71,10 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <th>
-                                <img src="img/po-logo.svg" alt="po">
-                                Petrol Ofisi
-                            </th>
-                            <td>44.82 ₺</td>
-                            <td>44.99 ₺</td>
-                            <td>23.2 ₺</td>
-                          </tr>
-                          <tr>
-                            <th>
-                                <img src="img/bp-logo.svg" alt="bp">
-                                BP
-                            </th>
-                            <td>44.82 ₺</td>
-                            <td>44.99 ₺</td>
-                            <td>23.2 ₺</td>
-                          </tr>
-                          <tr>
-                            <th>
-                                <img src="img/shell-logo.svg" alt="shell">
-                                Shell
-                            </th>
-                            <td>44.82 ₺</td>
-                            <td>44.99 ₺</td>
-                            <td>23.2 ₺</td>
+                            <th id="thead">...</th>
+                            <td>... ₺</td>
+                            <td>... ₺</td>
+                            <td>... ₺</td>
                           </tr>
                         </tbody>
                       </table>

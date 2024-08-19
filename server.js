@@ -121,6 +121,17 @@ function getPlateByCity(city) {
     return plate;
 }
 
+function getAbbrByBrand(brand){
+    switch (brand) {
+        case "Petrol Ofisi":        brand = "po";       break;
+        case "Opet":                brand = "opet";     break;
+        case "Alpet":               brand = "alpet";    break;
+        case "Sunpet":              brand = "sunpet";   break;
+        case "Türkiye Petrolleri":  brand = "tp";       break;
+    }
+    return brand;
+}
+
 // routes
 // mainpage
 app.get("/", (req, res) => {
@@ -134,9 +145,10 @@ app.get("/api/cities", (req, res) => {
 
 // data
 app.post('/api/gasPrice', (req, res) => {
-    const { city, district } = req.body;
+    const { city, /*district,*/ brand } = req.body;
     //const selectedCity = convertTurkishChars(city.toLowerCase());
     //const selectedDistrict = convertTurkishChars(district.toLowerCase());
+    const selectedBrand = getAbbrByBrand(brand)
     const selectedPlate = getPlateByCity(city);
     res.status(200);
 
@@ -144,7 +156,7 @@ app.post('/api/gasPrice', (req, res) => {
         method: 'GET',
         hostname: 'akaryakit-fiyatlari.vercel.app',
         port: null,
-        path: `/api/po/${selectedPlate}`,
+        path: `/api/${selectedBrand}/${selectedPlate}`,
         headers: {
             'content-type': 'application/json',   
         }
