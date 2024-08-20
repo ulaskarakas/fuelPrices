@@ -15,6 +15,7 @@ img{
     padding: 15px;
     background-color: #90A4AE;
     border-radius: 10px;
+    visibility: hidden;
 }
 
 #header-container{

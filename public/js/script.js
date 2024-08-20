@@ -7,7 +7,6 @@ function search() {
   //const selectedDistrict = districtSelect.value;
 
   if (selectedCity && brandSelect) {
-    console.log("test");
     fetch("/api/gasPrice", {
       method: "POST",
       headers: {
@@ -16,7 +15,7 @@ function search() {
       body: JSON.stringify({ city: selectedCity, /*district: selectedDistrict,*/ brand: selectedBrand}),
     })
       .then((response) => {
-        // Yanıt başarılı mı kontrol edin
+        // Yanıt başarılı mı kontrol et
         if (!response.ok) {
           throw new Error("Ağ yanıtında bir sorun var.");
         }
@@ -24,12 +23,39 @@ function search() {
       })
       .then((data) => {
         console.log("Sunucudan gelen veri:", data);
+        document.getElementById("table").style.visibility = "visible";
+        const fiyatlar = data.fiyatlar;
+        let n = document.getElementById("tbody").rows.length;
+        if (n != 0) {
+          for (let j = 0; j < n; j++) {
+            document.getElementById("tbody").deleteRow(fiyatlar[j]);
+          }
+        }
+
+        for (let i = 0; i < fiyatlar.length; i++) {
+          // satır eklemek istediğin tablo bölümünü belirt
+          let table = document.getElementById("tbody");
+          // insertRow() methodunu kullanarak row oluştur
+          // Row eklemek istediğiniz index'i belirt
+          let row = table.insertRow(-1); // en sona ekle
+          // Tablo hücrelerini ekle
+          let c1 = row.insertCell(0);
+          let c2 = row.insertCell(1);
+          let c3 = row.insertCell(2);
+          let c4 = row.insertCell(3);
+          // Hücrelere verileri ekle
+          c1.innerText = fiyatlar[i].ilce
+          c2.innerText = fiyatlar[i].benzin + "₺"
+          c3.innerText = fiyatlar[i].mazot + "₺"
+          c4.innerText = fiyatlar[i].lpg + "₺"
+        }
+        n = document.getElementById("tbody").rows.length;
       })
       .catch((error) => {
         console.error("Veri gönderme hatası:", error);
       });
   } else {
-    alert("Lütfen bir şehir seçin");
+    alert("Lütfen bir şehir ve firma seçin");
   }
 }
 
@@ -38,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((response) => response.json())
     .then((data) => {
       const citySelect = document.getElementById("citySelect");
-      const districtSelect = document.getElementById("districtSelect");
+      //const districtSelect = document.getElementById("districtSelect");
 
       data.forEach((item) => {
         const option = document.createElement("option");
