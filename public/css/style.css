@@ -1,8 +1,12 @@
 form{
     padding: 15px;
     margin-bottom: 10px;
-    background-color: #90A4AE;
+    background-color: #212529;
     border-radius: 10px;
+}
+
+#searchButton{
+    background-color: #F5A524;
 }
 
 img{
@@ -13,7 +17,7 @@ img{
 
 #table{
     padding: 15px;
-    background-color: #90A4AE;
+    background-color: #212529;
     border-radius: 10px;
     visibility: hidden;
 }
@@ -40,5 +44,5 @@ img{
 }
 
 .bg-color{
-    background-color: #546E7A;
+    background-color: #1A4052;
 }
