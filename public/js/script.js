@@ -33,6 +33,18 @@ function search() {
         }
 
         for (let i = 0; i < fiyatlar.length; i++) {
+          let c = document.getElementById("city");
+          c.innerText = selectedCity;
+          let b = document.getElementById("brand");
+          b.innerText = selectedBrand;
+          let bImage = document.getElementById("brand-image");
+          switch (selectedBrand) {
+            case "Petrol Ofisi": bImage.src = "img/po-logo.svg"; break;
+            case "Opet": bImage.src = "img/opet-logo.svg"; break;
+            case "Alpet": bImage.src = "img/alpet-logo.svg"; break;
+            case "Sunpet": bImage.src = "img/sunpet-logo.svg"; break;
+            case "Türkiye Petrolleri": bImage.src = "img/tp-logo.svg"; break;
+          }
           // satır eklemek istediğin tablo bölümünü belirt
           let table = document.getElementById("tbody");
           // insertRow() methodunu kullanarak row oluştur

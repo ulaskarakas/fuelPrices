@@ -1,3 +1,15 @@
+.bg-color-1A4052{
+    background-color: #1A4052;
+}
+
+#header-container{
+    padding: 15px;
+}
+
+#content-container{
+    padding: 15px;
+}
+
 form{
     padding: 15px;
     margin-bottom: 10px;
@@ -9,12 +21,6 @@ form{
     background-color: #F5A524;
 }
 
-img{
-    height: auto;
-    max-width: 30px;
-    border-radius: 2px;
-}
-
 #table{
     padding: 15px;
     background-color: #212529;
@@ -22,12 +28,16 @@ img{
     visibility: hidden;
 }
 
-#header-container{
-    padding: 15px;
+img{
+    height: auto;
+    max-width: 40px;
+    border-radius: 2px;
 }
 
-#content-container{
-    padding: 15px;
+#info, #info-brand{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .center{
@@ -35,14 +45,18 @@ img{
     justify-content: center;
 }
 
-.form-margin{
+.padding-right-5{
+    padding-right: 5px;
+}
+
+.padding-10{
+    padding: 10px;
+}
+
+.margin-right-5{
     margin-right: 5px;
 }
 
-.form-width{
+.width-200{
     width: 200px;
-}
-
-.bg-color{
-    background-color: #1A4052;
 }
