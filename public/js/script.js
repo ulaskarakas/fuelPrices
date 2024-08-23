@@ -35,8 +35,8 @@ function search() {
         for (let i = 0; i < fiyatlar.length; i++) {
           let c = document.getElementById("city");
           c.innerText = selectedCity;
-          let b = document.getElementById("brand");
-          b.innerText = selectedBrand;
+          //let b = document.getElementById("brand");
+          //b.innerText = selectedBrand;
           let bImage = document.getElementById("brand-image");
           switch (selectedBrand) {
             case "Petrol Ofisi": bImage.src = "img/po-logo.svg"; break;

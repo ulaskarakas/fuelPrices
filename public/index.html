@@ -15,21 +15,21 @@
 </head>
 <body class="bg-color-1A4052">
 
-    <div id="header-container" class="container text-center">
+    <div id="header-container" class="container text-center p-2">
         <div class="row">
             <div class="col">
                 <h1 class="text-white">Akaryakıt Fiyatları</h1>
             </div>
         </div>
     </div>
-    <div id="content-container" class="container">
+    <div id="content-container" class="container p-2">
         <div class="row">
             <div class="col-2"></div>
             <div class="col-8">
-                <form>
-                    <div class="form-row center" >
-                        <div class="form-group margin-right-5 width-200">
-                            <select id="brandSelect" class="form-control" style="border: 1px solid rgb(255, 255, 255, 0.1); background-color: #212529; color: #FFFFFF;">
+                <form class="p-2 my-1 rounded-3 bg-color-212529">
+                    <div class="form-row center">
+                        <div class="form-group mx-1 w-25">
+                            <select id="brandSelect" class="form-control form-select form-select-md" style="border: 1px solid rgb(255, 255, 255, 0.1); background-color: #212529; color: #FFFFFF;">
                                 <option selected>Firma seçin</option>
                                 <option value="Petrol Ofisi">Petrol Ofisi</option>
                                 <option value="Opet">Opet</option>
@@ -38,31 +38,31 @@
                                 <option value="Türkiye Petrolleri">Türkiye Petrolleri</option>
                             </select>
                         </div>
-                        <div class="form-group margin-right-5 width-200">
-                            <select id="citySelect" class="form-control" style="border: 1px solid rgb(255, 255, 255, 0.1); background-color: #212529; color: #FFFFFF;">
+                        <div class="form-group mx-1 w-25">
+                            <select id="citySelect" class="form-control form-select form-select-md" style="border: 1px solid rgb(255, 255, 255, 0.1); background-color: #212529; color: #FFFFFF;">
                                 <option selected>Şehir seçin</option>
                             </select>
                         </div>
                         <!--
-                        <div class="form-group margin-right-5 width-200">
+                        <div class="form-group margin-right-5 w-25">
                             <select id="districtSelect" class="form-control">
                                 <option selected>İlçe seçin</option>
                             </select>
                         </div>
                         -->
-                        <div class="form-group margin-right-5">
-                            <button id="searchButton" class="btn text-dark" onclick="search()" type="button">Ara</button>
+                        <div class="form-group mx-1">
+                            <button id="searchButton" class="btn btn-md" onclick="search()" type="button">Ara</button>
                         </div>
                     </div>
                 </form>
-                <div id="table" class="table-responsive">
-                    <div id="info" class="padding-10">
+                <div id="table" class="table-responsive p-2 rounded-3 bg-color-212529">
+                    <div id="info" class="p-2">
                         <div id="info-city" class="text-white">
                             <h3 id="city"></h3>
                         </div>
                         <div id="info-brand" class="text-white">
-                            <h5 id="brand" class="padding-right-5"></h5>
-                            <img id="brand-image" src="img/po-logo.svg" alt="" class="rounded">
+                            <h5 id="brand" class="px-1"></h5>
+                            <img id="brand-image" src="img/po-logo.svg" alt="" class="rounded-3">
                         </div>
                     </div>
                     <table id="table-inner" class="table table-hover table-dark" style="margin: 0;">
@@ -82,10 +82,10 @@
             <div class="col-2"></div>
         </div>
     </div>
-    <div id="footer-container" class="container text-center">
+    <div id="footer-container" class="container text-center text-white">
         <div class="row">
             <div class="col">
-                
+                <p class="my-2">© 2024 Tüm Hakları Saklıdır.</p>
             </div>
         </div>
     </div>
