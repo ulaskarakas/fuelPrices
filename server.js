@@ -12,28 +12,6 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const allowCors = fn => async (req, res) => {
-    res.setHeader('Access-Control-Allow-Credentials', true)
-    res.setHeader('Access-Control-Allow-Origin', '*')
-    // another common pattern
-    // res.setHeader('Access-Control-Allow-Origin', req.headers.origin);
-    res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT')
-    res.setHeader(
-      'Access-Control-Allow-Headers',
-      'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
-    )
-    if (req.method === 'OPTIONS') {
-      res.status(200).end()
-      return
-    }
-    return await fn(req, res)
-  }
-  
-  const handler = (req, res) => {
-    const d = new Date()
-    res.end(d.toString())
-  }
-
 /*
 const turkishToLatinMap = {
     'ı': 'i',
@@ -200,8 +178,6 @@ app.post('/api/gasPrice', (req, res) => {
     console.log(options.path);
 
     const apiRequest = https.request(options, apiResponse => {
-        console.log("API: ")
-        console.log(apiRequest);
         let data = '';
 
         apiResponse.on('data', chunk => {
@@ -234,5 +210,3 @@ app.post('/api/gasPrice', (req, res) => {
 app.listen(3000, () => {
   console.log("Server is running!");
 });
-
-module.exports = allowCors(handler)
