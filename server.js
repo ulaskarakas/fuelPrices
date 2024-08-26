@@ -7,7 +7,9 @@ const https = require("https");
 const data = require("./data.json");
 const bodyParser = require('body-parser');
 
-app.use(cors());
+app.use(cors({
+    origin: 'https://akaryakit-tr.vercel.app/'
+  }));
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
