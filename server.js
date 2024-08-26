@@ -178,6 +178,8 @@ app.post('/api/gasPrice', (req, res) => {
     console.log(options.path);
 
     const apiRequest = https.request(options, apiResponse => {
+        console.log("API: ")
+        console.log(apiRequest);
         let data = '';
 
         apiResponse.on('data', chunk => {
