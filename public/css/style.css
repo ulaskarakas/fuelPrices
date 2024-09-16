@@ -29,6 +29,14 @@ img{
     max-width: 60px;
 }
 
+select {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
 #searchButton{
     background-color: #F5A524;
     color: #212529;
@@ -61,28 +69,81 @@ img{
     color: #F5A524;
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 884px) {
+    #brandSelect{
+        font-size: 85%;
+    }
+    #citySelect{
+        font-size: 85%;
+    }
+    #searchButton{
+        font-size: 85%;
+    }
     #city{
-        font-size: 80%;
+        font-size: 85%;
     }
     .responsive {
-        width: 50%;
+        width: 85%;
         height: auto;
     }
     #table-inner{
-        font-size: 1.5vh;
+        font-size: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    #brandSelect{
+        font-size: 65%;
+    }
+    #citySelect{
+        font-size: 65%;
+    }
+    #searchButton{
+        font-size: 65%;
+    }
+    #city{
+        font-size: 65%;
+    }
+    .responsive {
+        width: 65%;
+        height: auto;
+    }
+    #table-inner{
+        font-size: 65%;
     }
 }
 
 @media (max-width: 576px) {
+    #brandselect{
+        font-size: 65%;
+    }
+    #citySelect{
+        font-size: 65%;
+    }
+    #searchButton{
+        font-size: 65%;
+    }
     #city{
-        font-size: 80%;
+        font-size: 65%;
+    }
+    .responsive {
+        width: 65%;
+        height: auto;
+    }
+    #table-inner{
+        font-size: 65%;
+    }
+}
+
+@media (max-width: 420px) {
+    #city{
+        font-size: 50%;
     }
     .responsive {
         width: 50%;
         height: auto;
     }
     #table-inner{
-        font-size: 1vh;
+        font-size: 50%;
     }
 }

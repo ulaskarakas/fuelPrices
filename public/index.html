@@ -30,8 +30,8 @@
                 <form class="p-2 my-1 rounded-3 bg-color-212529">
                     <div class="form-row center">
                         <div class="form-group mx-1 w-25">
-                            <select id="brandSelect" class="form-control form-select form-select-md" style="border: 1px solid rgb(255, 255, 255, 0.1); background-color: #212529; color: #FFFFFF;">
-                                <option selected>Firma seçin</option>
+                            <select required id="brandSelect" class="form-control form-select form-select-md" style="border: 1px solid rgb(255, 255, 255, 0.1); background-color: #212529; color: #FFFFFF;">
+                                <option selected hidden disabled value="">Firma Seçin</option>
                                 <option value="Petrol Ofisi">Petrol Ofisi</option>
                                 <option value="Opet">Opet</option>
                                 <option value="Alpet">Alpet</option>
@@ -40,8 +40,8 @@
                             </select>
                         </div>
                         <div class="form-group mx-1 w-25">
-                            <select id="citySelect" class="form-control form-select form-select-md" style="border: 1px solid rgb(255, 255, 255, 0.1); background-color: #212529; color: #FFFFFF;">
-                                <option selected>Şehir seçin</option>
+                            <select required id="citySelect" class="form-control form-select form-select-md" style="border: 1px solid rgb(255, 255, 255, 0.1); background-color: #212529; color: #FFFFFF;">
+                                <option selected hidden disabled value="">Şehir seçin</option>
                             </select>
                         </div>
                         <!--
@@ -51,7 +51,7 @@
                             </select>
                         </div>
                         -->
-                        <div class="form-group mx-1">
+                        <div id="search" class="form-group mx-1">
                             <button id="searchButton" class="btn btn-md" onclick="search()" type="button">Ara</button>
                         </div>
                     </div>
