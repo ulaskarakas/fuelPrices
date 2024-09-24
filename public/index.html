@@ -16,9 +16,7 @@
 </head>
 <body class="bg-color-1A4052">
     <div id="spinner" class="spinner-overlay justify-content-center align-items-center">
-        <div class="spinner-border" role="status">
-          
-        </div>
+        <div class="spinner-border" role="status"></div>
       </div>
     <div id="header-container" class="container-fluid text-center p-2">
         <div class="row">
@@ -34,7 +32,7 @@
                 <form class="p-2 my-1 rounded-3 bg-color-212529">
                     <div id="form-inner" class="form-row center">
                         <div class="form-group mx-1 my-1 width-25">
-                            <select required id="brandSelect" class="form-control form-select form-select-md" style="border: 1px solid rgb(255, 255, 255, 0.1); background-color: #212529; color: #FFFFFF;">
+                            <select required id="brandSelect" class="form-control form-select form-select-md" onchange="toggleSelects()" >
                                 <option selected hidden disabled value="">Firma Seçin</option>
                                 <option value="Petrol Ofisi">Petrol Ofisi</option>
                                 <option value="Opet">Opet</option>
@@ -44,7 +42,7 @@
                             </select>
                         </div>
                         <div class="form-group mx-1 my-1 width-25">
-                            <select required id="citySelect" class="form-control form-select form-select-md" style="border: 1px solid rgb(255, 255, 255, 0.1); background-color: #212529; color: #FFFFFF;">
+                            <select required id="citySelect" class="form-control form-select form-select-md" onchange="toggleSelects()" disabled>
                                 <option selected hidden disabled value="">Şehir seçin</option>
                             </select>
                         </div>
@@ -67,7 +65,7 @@
                         </div>
                         <div id="info-brand" class="text-white">
                             <h5 id="brand" class="px-1"></h5>
-                            <img id="brand-image" src="img/po-logo.svg" alt="" class="rounded-3 responsive">
+                            <img id="brand-image" src="" alt="" class="rounded-3 responsive">
                         </div>
                     </div>
                     <table id="table-inner" class="table table-hover table-dark" style="margin: 0;">
@@ -102,5 +100,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script>
+        function toggleSelects() {
+            if (brandSelect.value) {
+                citySelect.style.opacity = '1'; 
+                citySelect.disabled = false;
+            } else {
+                citySelect.disabled = true;
+            }
+        }
+    </script>
 </body>
 </html>

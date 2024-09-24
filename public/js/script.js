@@ -78,7 +78,7 @@ function search() {
         console.error("Veri gönderme hatası:", error);
       });
   } else {
-    alert("Lütfen bir şehir ve firma seçin");
+    alert("Lütfen bir şehir ve firma seçiniz!");
   }
 }
 
