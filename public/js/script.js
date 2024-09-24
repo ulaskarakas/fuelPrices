@@ -6,7 +6,17 @@ function search() {
   const selectedCity = citySelect.value;
   //const selectedDistrict = districtSelect.value;
 
+  function showSpinner() {
+    document.getElementById('spinner').classList.add('d-flex');
+  }
+
+  function hideSpinner() {
+    document.getElementById('spinner').classList.remove('d-flex');
+  }
+
   if (selectedCity && brandSelect) {
+    showSpinner();
+    setTimeout(hideSpinner, 3000);
     fetch("/api/gasPrice", {
       method: "POST",
       headers: {
@@ -22,6 +32,7 @@ function search() {
         return response.json(); // Yanıtı JSON formatında döndür
       })
       .then((data) => {
+        hideSpinner();
         console.log("Sunucudan gelen veri:", data);
         document.getElementById("table").style.visibility = "visible";
         const fiyatlar = data.fiyatlar;

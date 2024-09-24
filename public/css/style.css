@@ -9,6 +9,22 @@ body {
 
 /*header*/
 
+/*spinner*/
+#spinner{
+    display: none;
+}
+
+.spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 165, 36, 0.8); /* Yarı saydam arka plan */
+    display: none; /* Başlangıçta gizli */
+    z-index: 9999; /* Üstte kalması için */
+}
+
 /*content*/
 .bg-color-212529{
     background-color: #212529;
